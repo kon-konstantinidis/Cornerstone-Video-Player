@@ -1,0 +1,141 @@
+{
+  "src/lib/components/cornerstoneVP.react.js": {
+    "description": "CornerstoneVP is the custom cornerstone \r\ndicom video player component, made for Dash.\r\nIt takes a list of images and displays them,\r\nwhilst giving additional controls and mouse \r\ntools to the user, per the cornerstone library.",
+    "displayName": "CornerstoneVP",
+    "methods": [
+      {
+        "name": "getDicomImage",
+        "docblock": "Custom image loader to register with cornerstone\r\nThe imageId_data should be in format:\r\ndicomImageLoader://{imageId}_{imageHeight}-{imageWidth}_{imagePixelData}",
+        "modifiers": [],
+        "params": [
+          {
+            "name": "imageId_data"
+          }
+        ],
+        "returns": null,
+        "description": "Custom image loader to register with cornerstone\r\nThe imageId_data should be in format:\r\ndicomImageLoader://{imageId}_{imageHeight}-{imageWidth}_{imagePixelData}"
+      },
+      {
+        "name": "onPlayButtonClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onStopButtonClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onPreviousFrameButtonClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onNextFrameButtonClick",
+        "docblock": null,
+        "modifiers": [],
+        "params": [],
+        "returns": null
+      },
+      {
+        "name": "onSliderChange",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "event",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": true,
+        "description": "The ID used to identify this component in Dash callbacks."
+      },
+      "imagePixelsList": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "arrayOf",
+            "value": {
+              "name": "number"
+            }
+          }
+        },
+        "required": false,
+        "description": "A list of the image pixel 1D data array of all images",
+        "defaultValue": {
+          "value": "undefined",
+          "computed": true
+        }
+      },
+      "dicomName": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The DICOM filename of the video to be displayed",
+        "defaultValue": {
+          "value": "undefined",
+          "computed": true
+        }
+      },
+      "dicomDateTime": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The date-time of the video to be displayed",
+        "defaultValue": {
+          "value": "undefined",
+          "computed": true
+        }
+      },
+      "imageHeight": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The height of the images in the imagePixelsList",
+        "defaultValue": {
+          "value": "undefined",
+          "computed": true
+        }
+      },
+      "imageWidth": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The width of the images in the imagePixelsList",
+        "defaultValue": {
+          "value": "undefined",
+          "computed": true
+        }
+      },
+      "framerate": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Initially set framerate",
+        "defaultValue": {
+          "value": "undefined",
+          "computed": true
+        }
+      }
+    }
+  }
+}

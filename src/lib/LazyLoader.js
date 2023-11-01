@@ -1,0 +1,1 @@
+export const cornerstoneVP = React.lazy(() => import(/* webpackChunkName: "cornerstoneVP" */ './fragments/cornerstoneVP.react'));

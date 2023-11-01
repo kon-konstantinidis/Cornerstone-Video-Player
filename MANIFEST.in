@@ -1,0 +1,11 @@
+include cvp/cvp.min.js
+include cvp/cvp.min.js.map
+include cvp/async-*.js
+include cvp/async-*.js.map
+include cvp/*-shared.js
+include cvp/*-shared.js.map
+include cvp/metadata.json
+include cvp/package-info.json
+include README.md
+include LICENSE
+include package.json
